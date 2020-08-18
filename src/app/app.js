@@ -11,11 +11,13 @@ const App = () => {
   return (
     <Router>
       <Nav />
-      <div className="container">
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
-        </Switch>
+      <div className="scroller">
+        <div className="container">
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/about" component={About} />
+          </Switch>
+        </div>
       </div>
     </Router>
   );

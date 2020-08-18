@@ -1,8 +1,7 @@
 .navigation {
-  font-size: 24;
+  font-size: 18px;
   padding: 0.5em 1em;
   display: flex;
-  flex-basis: auto;
 }
 
 .navigation--logo > img {

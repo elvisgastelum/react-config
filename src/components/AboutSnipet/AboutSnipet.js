@@ -1,20 +1,13 @@
 import React from 'react';
 import CodeSnipet from 'components/CodeSnipet';
 
-const code = `
-{
-  "name": "Elvis Gastelum",
-  "developer", true,
-  "twitter": "@ElvisGastelum",
-  "github": "@ElvisGastelum"
-}
-`.trim();
+import code from './code';
 
 const AboutSnipet = () => {
   return (
     <figure>
       <figcaption>elvis-gastelum.json</figcaption>
-      <CodeSnipet code={code} language={'json'} />
+      <CodeSnipet language={'json'}>{code}</CodeSnipet>
     </figure>
   );
 };

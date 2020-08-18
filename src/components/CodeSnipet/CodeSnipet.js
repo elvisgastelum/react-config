@@ -1,16 +1,19 @@
 import React, { useEffect } from 'react';
-import '@/util/prism/prism';
-import '@/util/prism/prism-default.css';
+import Prism from 'prismjs';
 
-const CodeSnipet = (props) => {
+// import '@/util/prism/prism';
+// import '@/util/prism/prism-default.css';
+
+const CodeSnipet = ({ language, className, children, ...props }) => {
   useEffect(() => {
-    Prism.highlightAll()
-  }, [])
+    Prism.highlightAll();
+  }, []);
 
-  const { code, language, className } = props;
+  let langClassName = language ? `language-${language}` : '';
+
   return (
-    <pre className={`language-${language} line-numbers ${className}`} {...props}>
-      <code>{code}</code>
+    <pre className={`${className} ${langClassName}`} {...props}>
+      <code>{children}</code>
     </pre>
   );
 };

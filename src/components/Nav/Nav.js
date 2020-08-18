@@ -8,12 +8,16 @@ const Nav = () => {
   return (
     <nav className="navigation">
       <div className="navigation--logo">
-        <img src={logo} alt="logo"/>
-        <span>React Template</span>
+        <img src={logo} alt="logo" />
+        <Link to="/">React Template</Link>
       </div>
       <div className="navigation--links">
-        <Link className="navigation--link" to="/">Home</Link>
-        <Link className="navigation--link" to="/about">About</Link>
+        <Link className="navigation--link" to="/">
+          Home
+        </Link>
+        <Link className="navigation--link" to="/about">
+          About
+        </Link>
       </div>
     </nav>
   );
