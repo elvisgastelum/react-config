@@ -1,5 +1,5 @@
 # react-config
-![Home Page React Template](https://user-images.githubusercontent.com/43228550/90504941-ab681580-e106-11ea-8035-22b53e5af46f.png)
+![Screenshot_2020-08-18 React App](https://user-images.githubusercontent.com/43228550/90573959-88704c80-e16c-11ea-88ee-626f28de0a88.png)
 
 ```bash
 git clone https://github.com/ElvisGastelum/react-config project-name
